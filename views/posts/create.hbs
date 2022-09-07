@@ -1,0 +1,50 @@
+<section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Create A Post Form</h5>
+             
+</ul>
+{{#each errors}}
+<li class="text-danger">{{msg}}</li>
+{{/each}}
+</ul>
+
+              <!-- Horizontal Form -->
+              <form action="/posts/create" method="post">
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="title" class="form-control" id="inputText">
+                  </div>
+                </div>
+        
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <textarea name="content" class="form-control" id="inputEmail"></textarea>
+                  </div>
+                </div>
+         
+        <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+              </form><!-- End Horizontal Form -->
+
+            </div>
+          </div>
+
+        </div>
+        </div>
+        </section>
+
+
+        {{!-- <form action="/formData" method="post" enctype="multipart/form-data">
+        <p>Title: <input type="text" name="title" /></p>
+        <p>Image: <input type="file" name="image" /></p>
+        <p><input type="submit" value="Upload" /></p>
+        </form> --}}
+{{!-- }); --}}
